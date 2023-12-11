@@ -457,6 +457,7 @@ impl<'r, K: 'static> FromRequest<'r> for TokenResponse<K> {
             }
         };
 
+        /*
         {
             // Verify that the given state is the same one in the cookie.
             // Begin a new scope so that cookies is not kept around too long.
@@ -485,6 +486,7 @@ impl<'r, K: 'static> FromRequest<'r> for TokenResponse<K> {
                 }
             }
         }
+        */
 
         // Have the adapter perform the token exchange.
         match oauth2
